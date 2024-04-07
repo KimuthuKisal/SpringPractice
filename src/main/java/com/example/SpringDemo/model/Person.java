@@ -9,7 +9,6 @@ public class Person {
     private final String name;
 
     public Person(@JsonProperty("id") UUID id, @JsonProperty("name") String name) {
-        System.out.println("Person - Person : " + id + " " + name);
         this.id = id;
         this.name = name;
     }

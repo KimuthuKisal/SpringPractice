@@ -15,13 +15,11 @@ public class PersonController {
 
     @Autowired
     public PersonController(PersonService personService) {
-        System.out.println("PersonController - PersonController : " + personService);
         this.personService = personService;
     }
 
     @PostMapping
     public void addPerson(@RequestBody Person person) {
-        System.out.println("PersonController - addPerson : " + person.getName());
         personService.addPerson(person);
     }
 
